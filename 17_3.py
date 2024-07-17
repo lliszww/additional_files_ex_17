@@ -15,7 +15,6 @@ current_sequence = []
 
 for i in range(len(m)):
     if m[i] in sequence:
-        first_index = sequence.index(m[i])
         current_sequence.append(m[i])
     elif 1 < len(current_sequence):
         all_sequences.append(current_sequence)
