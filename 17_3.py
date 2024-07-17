@@ -13,7 +13,7 @@ while zz <= 10000:
 all_sequences = []
 current_sequence = []
 
-for i in range(len(m) - 1):
+for i in range(len(m)):
     if m[i] in sequence:
         first_index = sequence.index(m[i])
         current_sequence.append(m[i])
@@ -22,5 +22,3 @@ for i in range(len(m) - 1):
         current_sequence = []
 
 print(len(all_sequences), sum(max(all_sequences)))
-
-
