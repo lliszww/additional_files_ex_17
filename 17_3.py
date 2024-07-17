@@ -10,13 +10,8 @@ while zz <= 10000:
     z = zz
     zz = new
 
-
-main_count = 0
-max_len = 0
-
 all_sequences = []
 current_sequence = []
-cur_n = 0
 
 for i in range(len(m) - 1):
     if m[i] in sequence:
@@ -25,8 +20,6 @@ for i in range(len(m) - 1):
     elif len(current_sequence) != 0:
         all_sequences.append(current_sequence)
         current_sequence = []
-
-
 
 print(len(all_sequences), sum(max(all_sequences)))
 
